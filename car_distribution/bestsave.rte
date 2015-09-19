@@ -1,0 +1,145 @@
+ (routes 
+  (resolution um 1000)
+  (parser
+  )
+  (structure_out
+   (layer F.CU (type signal)
+   )
+   (layer B.CU (type signal)
+   )
+  )
+  (library_out
+   (padstack "Via[0-1]_600:400_um"
+    (shape (circ F.CU 600000 0 0))
+    (shape (circ B.CU 600000 0 0))
+   )
+  )
+  (network_out
+   (Net GND 
+   (wire (path F.CU 500000  177800000 -115316000 162560000 -115316000 162560000 -113030000)
+    (connect (terminal via) (terminal pin P1-1))
+   )
+   (wire (path B.CU 500000  163830000 -135890000 161925000 -135890000 161925000 -115732260
+     162560000 -115732260 162560000 -113030000)
+    (connect (terminal pin P3-1) (terminal pin P1-1))
+   )
+   (wire (path B.CU 500000  179070000 -124460000 179070000 -116840000 177800000 -116840000
+     177800000 -115316000)
+    (connect (terminal pin P2-1) (terminal via))
+   )
+   (wire (path F.CU 500000  177800000 -115316000 179070000 -115316000)
+    (connect (terminal via) (terminal wire))
+   )
+   (wire (path F.CU 500000  186690000 -113030000 186690000 -115316000 179070000 -115316000)
+    (connect (terminal pin P5-3) (terminal wire))
+   )
+   (via "Via[0-1]_600:400_um" 177800000 -115316000)
+   )
+   (Net "Net-(P1-Pad2)" 
+   (wire (path B.CU 500000  176530000 -135890000 176530000 -138049000 159639000 -138049000
+     159639000 -109982000 171577000 -109982000 171577000 -115316000 165100000 -115316000
+     165100000 -113030000)
+    (connect (terminal pin P3-11) (terminal pin P1-2))
+   )
+   )
+   (Net "Net-(P1-Pad3)" 
+   (wire (path F.CU 500000  167640000 -113030000 167640000 -110744000 160401000 -110744000
+     160401000 -137287000 173990000 -137287000 173990000 -135890000)
+    (connect (terminal pin P1-3) (terminal pin P3-9))
+   )
+   )
+   (Net +5V 
+   (wire (path B.CU 500000  186690000 -124460000 186690000 -117855140 181610000 -117855140
+     181610000 -113030000)
+    (connect (terminal pin P2-4) (terminal pin P5-1))
+   )
+   (wire (path B.CU 500000  170180000 -113030000 170180000 -111506000 161163000 -111506000
+     161163000 -137287000 168910000 -137287000 168910000 -135890000)
+    (connect (terminal pin P1-4) (terminal pin P3-5))
+   )
+   (wire (path F.CU 500000  170180000 -113030000 181610000 -113030000)
+    (connect (terminal pin P1-4) (terminal pin P5-1))
+   )
+   )
+   (Net "Net-(P2-Pad2)" 
+   (wire (path F.CU 500000  181610000 -124460000 181610000 -127653370 188849000 -127653370
+     188849000 -137287000 181610000 -137287000 181610000 -135890000)
+    (connect (terminal pin P2-2) (terminal pin P3-15))
+   )
+   )
+   (Net "Net-(P2-Pad3)" 
+   (wire (path B.CU 500000  179070000 -135890000 179070000 -137287000 188849000 -137287000
+     188849000 -126746000 184150000 -126746000 184150000 -124460000)
+    (connect (terminal pin P3-13) (terminal pin P2-3))
+   )
+   )
+   (Net "Net-(P3-Pad2)" 
+   (wire (path B.CU 500000  163830000 -133350000 163830000 -124460000)
+    (connect (terminal pin P3-2) (terminal pin P4-1))
+    (attr bus)
+   )
+   )
+   (Net VCC 
+   )
+   (Net "Net-(P3-Pad4)" 
+   (wire (path B.CU 500000  166370000 -133350000 166370000 -124460000)
+    (connect (terminal pin P3-4) (terminal pin P4-2))
+    (attr bus)
+   )
+   )
+   (Net "Net-(P3-Pad6)" 
+   (wire (path B.CU 500000  168910000 -133350000 168910000 -124460000)
+    (connect (terminal pin P3-6) (terminal pin P4-3))
+    (attr bus)
+   )
+   )
+   (Net +3V3 
+   )
+   (Net "Net-(P3-Pad8)" 
+   (wire (path B.CU 500000  171450000 -133350000 171450000 -124460000)
+    (connect (terminal pin P3-8) (terminal pin P4-4))
+    (attr bus)
+   )
+   )
+   (Net "Net-(P3-Pad10)" 
+   (wire (path B.CU 500000  173990000 -133350000 173990000 -111506000 184150000 -111506000
+     184150000 -113030000)
+    (connect (terminal pin P3-10) (terminal pin P5-2))
+   )
+   )
+   (Net "Net-(P3-Pad12)" 
+   )
+   (Net "Net-(P3-Pad14)" 
+   )
+   (Net "Net-(P3-Pad16)" 
+   )
+   (Net "Net-(P3-Pad17)" 
+   )
+   (Net "Net-(P3-Pad18)" 
+   )
+   (Net "Net-(P3-Pad19)" 
+   )
+   (Net "Net-(P3-Pad20)" 
+   )
+   (Net "Net-(P6-Pad1)" 
+   )
+   (Net "Net-(P6-Pad2)" 
+   )
+   (Net "Net-(P6-Pad3)" 
+   )
+   (Net "Net-(P6-Pad4)" 
+   )
+   (Net "Net-(P6-Pad5)" 
+   )
+   (Net "Net-(P6-Pad6)" 
+   )
+   (Net "Net-(P6-Pad7)" 
+   )
+   (Net "Net-(P6-Pad8)" 
+   )
+   (Net "Net-(P6-Pad9)" 
+   )
+   (Net "Net-(P6-Pad10)" 
+   )
+  )
+ )
